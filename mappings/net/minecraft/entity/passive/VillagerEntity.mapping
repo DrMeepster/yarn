@@ -57,6 +57,8 @@ CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 		ARG 3 requiredVillagerCount
 	METHOD method_20690 notifyDeath (Lnet/minecraft/class_1297;)V
 		ARG 1 killer
+	METHOD method_20691 (Lnet/minecraft/class_3218;Lnet/minecraft/class_1297;Lnet/minecraft/class_1309;)V
+		ARG 2 mob
 	METHOD method_20692 setGolemLastSeenTime (J)V
 		ARG 1 time
 	METHOD method_20694 hasSeenGolemRecently (J)Z
@@ -65,6 +67,8 @@ CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 	METHOD method_20696 decayGossip ()V
 	METHOD method_20697 eatForBreeding ()V
 	METHOD method_20698 lacksFood ()Z
+	METHOD method_20699 (Lnet/minecraft/class_1309;)Z
+		ARG 0 mobs
 	METHOD method_20741 hasRecentlyWorkedAndSlept (J)Z
 		ARG 1 worldTime
 	METHOD method_20820 canGather (Lnet/minecraft/class_1792;)Z
@@ -73,6 +77,11 @@ CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 	METHOD method_20822 shouldRestock ()Z
 	METHOD method_20823 needRestock ()Z
 	METHOD method_20824 canRestock ()Z
+	METHOD method_21650 applyGossip (Lnet/minecraft/class_2520;)V
+		ARG 1 tag
+	METHOD method_21651 getGossip ()Lnet/minecraft/class_4136;
+	METHOD method_21723 resetTradeUses ()V
+	METHOD method_21724 updateTradePrices ()V
 	METHOD method_7221 setVillagerData (Lnet/minecraft/class_3850;)V
 		ARG 1 villagerData
 	METHOD method_7234 wantsToStartBreeding ()Z
